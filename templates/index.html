@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tracker</title>
+</head>
+<body>
+    <h2>Enter Water Intake</h2>
+
+    <form method="POST">
+        <input type="number" name="glasses" placeholder="Enter glasses" required>
+        <button type="submit">Submit</button>
+    
+    </form>
+    {% if water %}
+    <h3>Today's intake: {{ water }} glasses 💧</h3>
+    {% endif %}
+
+    {% if feedback %}
+       <p>{{ feedback}}</p>
+    {% endif %}
+
+</body>
+</html>
